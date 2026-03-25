@@ -994,11 +994,11 @@
       </div>
 
       <div class="work-thumb-card">
-        <div class="work-thumb-img">
-          <img src="cheap-irish-homes.jpeg" alt="Cheap Irish Homes" loading="lazy">
+        <div class="work-thumb-img landscape">
+          <img src="halloween.jpeg" alt="Halloween: An Ancient Mystery" loading="lazy" style="object-position: right center;">
         </div>
         <div class="work-thumb-info">
-          <p class="work-thumb-title">Cheap Irish Homes</p>
+          <p class="work-thumb-title">Halloween: An Ancient Mystery</p>
         </div>
       </div>
 
@@ -1039,11 +1039,11 @@
       </div>
 
       <div class="work-thumb-card">
-        <div class="work-thumb-img landscape">
-          <img src="halloween.jpeg" alt="Halloween: An Ancient Mystery" loading="lazy" style="object-position: right center;">
+        <div class="work-thumb-img">
+          <img src="cheap-irish-homes.jpeg" alt="Cheap Irish Homes" loading="lazy">
         </div>
         <div class="work-thumb-info">
-          <p class="work-thumb-title">Halloween: An Ancient Mystery</p>
+          <p class="work-thumb-title">Cheap Irish Homes</p>
         </div>
       </div>
 
@@ -1100,7 +1100,7 @@
     </div>
 
     <!-- Featured films - three across, native ratios, centred -->
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; max-width: 960px; margin: 0 auto 52px; align-items: center;">
+    <div style="display: grid; grid-template-columns: 1.1fr 0.8fr 1.1fr; gap: 12px; max-width: 960px; margin: 0 auto 52px; align-items: center;">
       <div style="border-radius: var(--radius-md); overflow: hidden; background: #111;">
         <img src="graceless-age.jpg" alt="The Graceless Age - The Ballad of John Murry" loading="lazy" style="width:100%; display: block;">
         <div style="padding: 11px 14px 14px;">
@@ -1479,31 +1479,31 @@
         <ul class="timeline">
           <li class="tl-item">
             <span class="tl-year">2007–Now</span>
-            <div class="tl-info">Avatar Audio Post Production
-              <span>Founder &amp; Senior Dubbing Mixer · Dublin</span>
+            <div class="tl-info">Avatar Audio Post Production, Dublin &amp; Wicklow
+              <span>Founder &amp; Senior Dubbing Mixer</span>
             </div>
           </li>
           <li class="tl-item">
             <span class="tl-year">1997–2007</span>
-            <div class="tl-info">Oasis TV, London
+            <div class="tl-info">Oasis TV, Soho, London
               <span>Senior Dubbing Mixer · BBC, Channel 4, ITV</span>
             </div>
           </li>
           <li class="tl-item">
             <span class="tl-year">1996–1997</span>
-            <div class="tl-info">Molinaire, Carnaby Street, London
+            <div class="tl-info">Molinaire, Soho, London
               <span>Senior Dubbing Mixer</span>
             </div>
           </li>
           <li class="tl-item">
             <span class="tl-year">1994–1996</span>
-            <div class="tl-info">Space Facilities, London
+            <div class="tl-info">Space Facilities, Soho, London
               <span>Senior Dubbing Mixer</span>
             </div>
           </li>
           <li class="tl-item">
             <span class="tl-year">1992–1994</span>
-            <div class="tl-info">Carlton Television, London
+            <div class="tl-info">Carlton Television, South Bank, London
               <span>Head of Audio Post Production</span>
             </div>
           </li>
@@ -1529,7 +1529,7 @@
     <div class="contact-grid">
       <div class="contact-chip">
         <p class="contact-chip-label">Email</p>
-        <p class="contact-chip-val"><a href="mailto:info@avatarpost.ie">info@avatarpost.ie</a></p>
+        <p class="contact-chip-val"><a href="/cdn-cgi/l/email-protection#1970777f7659786f786d786b69766a6d37707c"><span class="__cf_email__" data-cfemail="721b1c141d32130413061300021d01065c1b17">[email&#160;protected]</span></a></p>
       </div>
       <div class="contact-chip">
         <p class="contact-chip-label">Phone</p>
@@ -1544,7 +1544,7 @@
         <p class="contact-chip-val"><a href="https://www.imdb.com/name/nm3046899/" target="_blank">View Credits ↗</a></p>
       </div>
     </div>
-    <a href="mailto:info@avatarpost.ie" class="btn btn-solid">Send a Message</a>
+    <a href="/cdn-cgi/l/email-protection#f1989f979eb1908790859083819e8285df9894" class="btn btn-solid">Send a Message</a>
   </div>
 </section>
 
@@ -1559,7 +1559,7 @@
 <!-- ════════════════════════════════════════════════
      JAVASCRIPT
 ═════════════════════════════════════════════════ -->
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // ── Nav: adaptive dark/light based on hero ───────────────
   const nav = document.getElementById('site-nav');
   const hero = document.getElementById('hero');
@@ -1579,13 +1579,3 @@
   document.querySelectorAll('.svc-card, .post-card, .award-card, .work-thumb-card, .flow-item').forEach((el, i) => {
     el.classList.add('fade-up');
     el.style.transitionDelay = (i % 4) * 0.08 + 's';
-  });
-
-  const fadeObs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.fade-up').forEach(el => fadeObs.observe(el));
-</script>
-
-</body>
-</html>
