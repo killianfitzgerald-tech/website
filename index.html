@@ -623,6 +623,11 @@
       transition: border-color 0.2s, color 0.2s;
     }
     .bc-logo:hover { border-color: var(--c-accent); color: var(--c-accent); }
+    .bc-logo-img {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+    }
     .rte-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c-accent); }
 
     /* ─── ⑥ WORK ────────────────────────────────────────────── */
@@ -858,7 +863,9 @@
   <div class="hero-content col-center">
     <h1 style="margin:0; padding:0; line-height:1;"><img src="Avatar_Logo.png" alt="Avatar Audio Post Production" style="max-width: min(90vw, 725px); height: auto; margin-bottom: 28px;"><span style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Avatar Audio Post Production – Audio Post Production &amp; Restoration Ireland</span></h1>
     <p class="t-subhead hero-sub">
-      Ireland's specialist audio post-production and audio restoration studio. Two-time IFTA award-winner. Audio consultant to the Irish Film Institute Film Archive.
+      Ireland's specialist audio post-production and audio restoration studio.<br>
+      Two-time IFTA award-winner.<br>
+      Audio consultant to the Irish Film Institute Film Archive.
     </p>
     <div class="btn-group center">
       <a href="#contact" class="btn btn-solid">Get in Touch</a>
@@ -900,105 +907,18 @@
     <div class="broadcaster-strip">
       <p class="broadcaster-label">Productions for</p>
       <div class="broadcaster-logos">
-
-        <!-- BBC -->
-        <div class="bc-logo" title="BBC">
-          <svg height="28" viewBox="0 0 88 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="26" height="28" rx="3" fill="#000"/>
-            <text x="13" y="20" text-anchor="middle" fill="white" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="700" font-size="15">B</text>
-            <rect x="31" width="26" height="28" rx="3" fill="#000"/>
-            <text x="44" y="20" text-anchor="middle" fill="white" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="700" font-size="15">B</text>
-            <rect x="62" width="26" height="28" rx="3" fill="#000"/>
-            <text x="75" y="20" text-anchor="middle" fill="white" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="700" font-size="15">C</text>
-          </svg>
-        </div>
-
-        <!-- Channel 4 -->
-        <div class="bc-logo" title="Channel 4">
-          <svg height="32" viewBox="0 0 52 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M28 0L14 20h14V0z" fill="#000"/>
-            <path d="M0 20h42v6H0z" fill="#000"/>
-            <path d="M28 0v38h6V0h-6z" fill="#000"/>
-          </svg>
-        </div>
-
-        <!-- RTÉ -->
-        <div class="bc-logo" title="RTÉ">
-          <svg height="26" viewBox="0 0 72 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="0" y="21" fill="#000" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="800" font-size="24" letter-spacing="-0.03em">RTÉ</text>
-          </svg>
-        </div>
-
-        <!-- TG4 -->
-        <div class="bc-logo" title="TG4">
-          <svg height="26" viewBox="0 0 62 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="0" y="21" fill="#000" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="800" font-size="24" letter-spacing="-0.02em">TG4</text>
-          </svg>
-        </div>
-
-        <!-- ARTE -->
-        <div class="bc-logo" title="ARTE">
-          <svg height="28" viewBox="0 0 80 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="80" height="28" rx="3" fill="#000"/>
-            <text x="40" y="20" text-anchor="middle" fill="white" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="700" font-size="15" letter-spacing="0.05em">ARTE</text>
-          </svg>
-        </div>
-
-        <!-- National Geographic -->
-        <div class="bc-logo" title="National Geographic">
-          <svg height="28" viewBox="0 0 118 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="8" height="28" fill="#000"/>
-            <text x="16" y="20" fill="#000" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="700" font-size="13" letter-spacing="-0.01em">NAT GEO</text>
-          </svg>
-        </div>
-
-        <!-- Smithsonian -->
-        <div class="bc-logo" title="Smithsonian Channel">
-          <svg height="28" viewBox="0 0 128 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="0" y="20" fill="#000" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="600" font-size="13" letter-spacing="0.01em">SMITHSONIAN</text>
-          </svg>
-        </div>
-
-        <!-- IFI -->
-        <div class="bc-logo" title="Irish Film Institute">
-          <svg height="28" viewBox="0 0 60 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="60" height="28" rx="3" fill="#000"/>
-            <text x="30" y="20" text-anchor="middle" fill="white" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="700" font-size="14" letter-spacing="0.06em">IFI</text>
-          </svg>
-        </div>
-
-        <!-- SKY -->
-        <div class="bc-logo" title="Sky">
-          <svg height="28" viewBox="0 0 60 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="60" height="28" rx="3" fill="#000"/>
-            <text x="30" y="20" text-anchor="middle" fill="white" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="700" font-size="14" letter-spacing="0.04em">SKY</text>
-          </svg>
-        </div>
-
-        <!-- ITV -->
-        <div class="bc-logo" title="ITV">
-          <svg height="28" viewBox="0 0 60 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="60" height="28" rx="3" fill="#000"/>
-            <text x="30" y="20" text-anchor="middle" fill="white" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="700" font-size="14" letter-spacing="0.04em">ITV</text>
-          </svg>
-        </div>
-
-        <!-- NTA -->
-        <div class="bc-logo" title="Nigerian Television Authority">
-          <svg height="28" viewBox="0 0 60 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="60" height="28" rx="3" fill="#000"/>
-            <text x="30" y="20" text-anchor="middle" fill="white" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="700" font-size="14" letter-spacing="0.04em">NTA</text>
-          </svg>
-        </div>
-
-        <!-- RTL -->
-        <div class="bc-logo" title="RTL Germany">
-          <svg height="28" viewBox="0 0 60 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="60" height="28" rx="3" fill="#000"/>
-            <text x="30" y="20" text-anchor="middle" fill="white" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-weight="700" font-size="14" letter-spacing="0.04em">RTL</text>
-          </svg>
-        </div>
-
+        <img src="logo-bbc.png" alt="BBC" title="BBC" class="bc-logo-img">
+        <img src="logo-ch4.png" alt="Channel 4" title="Channel 4" class="bc-logo-img">
+        <img src="logo-rte.png" alt="RTÉ" title="RTÉ" class="bc-logo-img">
+        <img src="logo-tg4.png" alt="TG4" title="TG4" class="bc-logo-img">
+        <img src="logo-arte.png" alt="ARTE" title="ARTE" class="bc-logo-img">
+        <img src="logo-natgeo.png" alt="National Geographic" title="National Geographic" class="bc-logo-img">
+        <img src="logo-smithsonian.png" alt="Smithsonian" title="Smithsonian Channel" class="bc-logo-img">
+        <img src="logo-ifi.png" alt="IFI" title="Irish Film Institute" class="bc-logo-img">
+        <img src="logo-sky.png" alt="Sky" title="Sky" class="bc-logo-img">
+        <img src="logo-itv.png" alt="ITV" title="ITV" class="bc-logo-img">
+        <img src="logo-nta.png" alt="NTA" title="Nigerian Television Authority" class="bc-logo-img">
+        <img src="logo-rtl.png" alt="RTL" title="RTL Germany" class="bc-logo-img">
       </div>
     </div>
   </div>
