@@ -327,11 +327,16 @@
       max-width: 640px; margin: 24px auto 44px;
     }
     #hero .btn-solid {
-      background: var(--c-white); color: var(--c-bg-dark);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: var(--c-white);
+      border: 0.5px solid rgba(255,255,255,0.3);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     }
     #hero .btn-solid:hover {
-      background: rgba(255,255,255,0.88);
+      background: rgba(255,255,255,0.35);
+      border-color: rgba(255,255,255,0.5);
     }
     /* Stat strip */
     .hero-stats {
