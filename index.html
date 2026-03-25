@@ -371,7 +371,7 @@
 
     /* ─── ② SERVICES ────────────────────────────────────────── */
     #services { background: var(--c-bg); background-image: url('bg-still-1.jpg'); background-size: cover; background-position: center; position: relative; }
-    #services::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.45); pointer-events: none; }
+    #services::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.35); pointer-events: none; }
     #services .t-subhead, #services .svc-card p { font-weight: 500; }
     .services-grid {
       display: grid;
@@ -499,7 +499,7 @@
 
     /* ─── ④ STEM SEPARATION ─────────────────────────────────── */
     #stem { background: var(--c-bg); background-image: url('bg-still-3.jpg'); background-size: cover; background-position: center; position: relative; }
-    #stem::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.45); pointer-events: none; }
+    #stem::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.35); pointer-events: none; }
     #stem .t-subhead, #stem .flow-item p { font-weight: 500; }
     #stem .t-title  { color: var(--c-text); }
     #stem .t-subhead { color: var(--c-text-2); }
@@ -561,7 +561,7 @@
 
     /* ─── ⑤ POST-PRODUCTION ─────────────────────────────────── */
     #post { background: var(--c-bg); background-image: url('bg-still-2.jpg'); background-size: cover; background-position: center; position: relative; }
-    #post::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.45); pointer-events: none; }
+    #post::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.35); pointer-events: none; }
     #post .t-subhead, #post .post-card p { font-weight: 500; }
     .post-grid {
       display: grid; grid-template-columns: repeat(2,1fr); gap: 16px;
@@ -739,7 +739,7 @@
 
     /* ─── ⑧ ABOUT ───────────────────────────────────────────── */
     #about { background: var(--c-bg); background-image: url('bg-about.jpg'); background-size: cover; background-position: center; position: relative; }
-    #about::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.45); pointer-events: none; }
+    #about::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.35); pointer-events: none; }
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
     .about-text p { color: var(--c-text-2); margin-bottom: 18px; }
     .about-text strong { color: var(--c-text); font-weight: 600; }
@@ -1086,6 +1086,25 @@
         </div>
       </div>
 
+      <div class="work-thumb-card">
+        <div class="work-thumb-img">
+          <img src="the-unreal.jpg" alt="The Unreal" loading="lazy">
+        </div>
+        <div class="work-thumb-info">
+          <p class="work-thumb-title">The Unreal</p>
+          <p class="work-thumb-tag">Sound Mix &amp; Sound Design · RTÉ</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Featured film - full width landscape -->
+    <div style="max-width: 700px; margin: 0 auto 52px; border-radius: var(--radius-md); overflow: hidden; background: #111;">
+      <img src="graceless-age.jpg" alt="The Graceless Age - The Ballad of John Murry" loading="lazy" style="width:100%; display: block;">
+      <div style="padding: 11px 14px 14px; text-align: center;">
+        <p class="work-thumb-title">The Graceless Age  -  The Ballad of John Murry</p>
+        <p class="work-thumb-tag">Sound Post  · Feature Documentary · In Cinemas</p>
+      </div>
     </div>
 
     <!-- Earlier notable work with real poster images -->
