@@ -1,0 +1,10 @@
+# Redirect old Squarespace URLs to new single-page sections
+/our-team          /#about        301
+/what-we-do        /#services     301
+/our-work          /#work         301
+/contact           /#contact      301
+/credits           /#work         301
+/about             /#about        301
+/podcast-production /#services    301
+/privacy-policy    /              301
+/cookie-policy     /              301

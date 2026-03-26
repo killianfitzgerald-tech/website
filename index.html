@@ -700,12 +700,10 @@
     }
     .bc-logo:hover { border-color: var(--c-accent); color: var(--c-accent); }
     .bc-logo-img {
-      height: 28px;
+      height: 32px;
       width: auto;
       object-fit: contain;
-      padding: 6px 16px;
-      background: #111;
-      border-radius: 8px;
+      padding: 4px 8px;
     }
     .rte-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c-accent); }
 
@@ -940,7 +938,7 @@
 ═════════════════════════════════════════════════ -->
 <section id="hero" style="background-image: url('hero-still.jpg'); background-size: cover; background-position: center;">
   <div class="hero-content col-center">
-    <h1 style="margin:0; padding:0; line-height:1;"><img src="Avatar_Logo.png" alt="Avatar Audio Post Production" style="max-width: min(90vw, 725px); height: auto; margin-bottom: 28px;"><span style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Avatar Audio Post Production – Audio Post Production &amp; Restoration Ireland</span></h1>
+    <h1 style="margin:0; padding:0; line-height:1;"><img loading="lazy" src="Avatar_Logo.png" alt="Avatar Audio Post Production" style="max-width: min(90vw, 725px); height: auto; margin-bottom: 28px;"><span style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Avatar Audio Post Production – Audio Post Production &amp; Restoration Ireland</span></h1>
     <p class="t-subhead hero-sub">
       Ireland's specialist audio post-production and audio restoration studio.<br>
       Audio consultant to the Irish Film Institute Film Archive.<br>
@@ -998,6 +996,7 @@
         <img loading="lazy" src="logo-itv.png" alt="ITV" title="ITV" class="bc-logo-img">
         <img loading="lazy" src="logo-nta.png" alt="NTA" title="Nigerian Television Authority" class="bc-logo-img">
         <img loading="lazy" src="logo-rtl.png" alt="RTL" title="RTL Germany" class="bc-logo-img">
+        <img loading="lazy" src="logo-carlton.png" alt="Carlton Television" title="Carlton Television" class="bc-logo-img">
       </div>
     </div>
   </div>
@@ -1264,7 +1263,7 @@
           <svg viewBox="0 0 28 28"><path d="M4 8h20M4 14h20M4 20h20" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/><circle cx="8" cy="8" r="2" fill="white"/><circle cx="14" cy="14" r="2" fill="white"/><circle cx="20" cy="20" r="2" fill="white"/></svg>
         </div>
         <h3>Stem Separation &amp; Re-Versioning</h3>
-        <p>Remove dialogue, narration or music from a completed mix. M&amp;E track creation and re-versioning audio services for films and TV shows when original stems no longer exist.</p>
+        <p>Remove dialogue, narration or music from a completed mix. M&amp;E (Music &amp; Effects) track creation and re-versioning audio services for films and TV shows when original stems no longer exist.</p>
         <a href="#stem" class="svc-more">Learn more</a>
       </div>
 
@@ -1323,7 +1322,7 @@
           </div>
           <!-- The Outcasts (1982) -->
           <div class="poster-item">
-            <img src="https://upload.wikimedia.org/wikipedia/en/2/20/The_Outcasts_1982_film_poster.jpg" alt="The Outcasts (1982)" loading="lazy">
+            <img src="the-outcasts.jpg" alt="The Outcasts (1982)" loading="lazy">
             <span class="poster-caption">The Outcasts</span>
           </div>
           <!-- Trojan Eddie -->
@@ -1338,12 +1337,12 @@
           </div>
           <!-- Korea (1995) -->
           <div class="poster-item">
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Korea_%281995%29_poster.jpg/250px-Korea_%281995%29_poster.jpg" alt="Korea (1995)" loading="lazy">
+            <img src="korea.jpg" alt="Korea (1995)" loading="lazy">
             <span class="poster-caption">Korea</span>
           </div>
           <!-- Snakes and Ladders (1996) -->
           <div class="poster-item">
-            <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Snakes_and_Ladders_%281996_film%29.webp" alt="Snakes and Ladders (1996)" loading="lazy">
+            <img src="snakes-and-ladders.jpg" alt="Snakes and Ladders (1996)" loading="lazy">
             <span class="poster-caption">Snakes and Ladders</span>
           </div>
           <!-- Disco Pigs -->
@@ -1574,7 +1573,7 @@
     <div class="contact-grid">
       <div class="contact-chip">
         <p class="contact-chip-label">Email</p>
-        <p class="contact-chip-val"><a href="/cdn-cgi/l/email-protection#1c75727a733a3f2a28277d6a7d687d6e6c736f68327579">info&#64;avatarpost.ie</a></p>
+        <p class="contact-chip-val"><a href="mailto:info&#64;avatarpost.ie">info&#64;avatarpost.ie</a></p>
       </div>
       <div class="contact-chip">
         <p class="contact-chip-label">Phone</p>
@@ -1589,7 +1588,7 @@
         <p class="contact-chip-val"><a href="https://www.imdb.com/name/nm3046899/" target="_blank">View Credits ↗</a></p>
       </div>
     </div>
-    <a href="/cdn-cgi/l/email-protection#a4cdcac2cb828792909fc5d2c5d0c5d6d4cbd7d08acdc1" class="btn btn-solid">Send a Message</a>
+    <a href="mailto:info&#64;avatarpost.ie" class="btn btn-solid">Send a Message</a>
   </div>
 </section>
 
@@ -1604,7 +1603,7 @@
 <!-- ════════════════════════════════════════════════
      JAVASCRIPT
 ═════════════════════════════════════════════════ -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // ── Nav: adaptive dark/light based on hero ───────────────
   const nav = document.getElementById('site-nav');
   const hero = document.getElementById('hero');
@@ -1627,4 +1626,10 @@
   });
 
   const fadeObs = new IntersectionObserver(entries => {
-    entries.forEach(
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => fadeObs.observe(el));
+</script>
+
+</body>
+</html>
