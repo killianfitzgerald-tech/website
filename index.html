@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avatar Audio Post Production | Audio Restoration &amp; Post Production Ireland</title>
-  <meta name="description" content="Professional audio restoration, film sound restoration and audio post-production services in Dublin, County Wicklow and across Ireland. IFTA award-winning expertise. Audio consultant to the IFI Film Archive." />
-  <meta name="keywords" content="audio restoration Ireland, audio restoration Dublin, audio restoration Wicklow, audio post production Dublin, post production studio Wicklow, film archive audio restoration, sound restoration for film, dubbing mixer Ireland, M&amp;E track creation, stem separation services, re-versioning audio services, IFTA award winning sound, dialogue editing Dublin, ADR prep Dublin" />
+  <title>Avatar Audio Post Production | Dolby Atmos &amp; 5.1 Mixing, Voice-Over &amp; Audio Restoration, Ireland</title>
+  <meta name="description" content="Dolby Atmos and 5.1 mixing, voice-over recording and audio restoration for film, TV and streaming. Based in Ireland, working worldwide. Two-time IFTA winner." />
+  <meta name="keywords" content="Dolby Atmos mixing Ireland, Dolby Atmos mix Dublin, 5.1 surround mixing Ireland, Netflix audio delivery, Amazon Prime Video audio delivery, voice-over recording Ireland, voice-over recording Dublin, multilingual voice-over recording, audio restoration Ireland, audio restoration Dublin, audio restoration Wicklow, audio post production Dublin, post production studio Wicklow, film archive audio restoration, sound restoration for film, dubbing mixer Ireland, M&amp;E track creation, stem separation services, re-versioning audio services, IFTA award winning sound, dialogue editing Dublin, ADR prep Dublin" />
   <meta name="robots" content="index, follow" />
   <link rel="preconnect" href="https://upload.wikimedia.org">
   <link rel="dns-prefetch" href="https://upload.wikimedia.org">
@@ -13,8 +13,8 @@
 
   <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Avatar Audio Post Production | Audio Restoration &amp; Post Production Ireland" />
-  <meta property="og:description" content="Professional audio restoration, film sound restoration and audio post-production services in Dublin, County Wicklow and across Ireland. IFTA award-winning. Audio consultant to the IFI Film Archive." />
+  <meta property="og:title" content="Avatar Audio Post Production | Dolby Atmos &amp; 5.1 Mixing, Voice-Over &amp; Audio Restoration, Ireland" />
+  <meta property="og:description" content="Dolby Atmos and 5.1 mixing, voice-over recording and audio restoration for film, TV and streaming. Based in Ireland, working worldwide. Two-time IFTA winner." />
   <meta property="og:url" content="https://www.avatarpost.ie/" />
   <meta property="og:image" content="https://www.avatarpost.ie/Avatar_Logo.jpg" />
   <meta property="og:image:width" content="1565" />
@@ -24,8 +24,8 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Avatar Audio Post Production | Audio Restoration &amp; Post Production Ireland" />
-  <meta name="twitter:description" content="Professional audio restoration, film sound restoration and audio post-production services in Ireland. IFTA award-winning. Audio consultant to the IFI Film Archive." />
+  <meta name="twitter:title" content="Avatar Audio Post Production | Dolby Atmos &amp; 5.1 Mixing, Voice-Over &amp; Audio Restoration, Ireland" />
+  <meta name="twitter:description" content="Dolby Atmos and 5.1 mixing, voice-over recording and audio restoration for film, TV and streaming. Based in Ireland, working worldwide. Two-time IFTA winner." />
   <meta name="twitter:image" content="https://www.avatarpost.ie/Avatar_Logo.jpg" />
 
   <!-- Favicon -->
@@ -38,7 +38,8 @@
     "@type": "LocalBusiness",
     "@id": "https://www.avatarpost.ie/#business",
     "name": "Avatar Audio Post Production",
-    "description": "Specialist audio post-production, audio restoration and stem separation studio serving Dublin, County Wicklow and across Ireland. IFTA award-winning. Audio consultant to the IFI Film Archive.",
+    "description": "Dolby Atmos and 5.1 mixing, voice-over recording, audio restoration and stem separation for film, television and streaming. Based in County Wicklow, Ireland, working with productions worldwide. IFTA award-winning. Audio consultant to the IFI Film Archive.",
+    "knowsAbout": ["Dolby Atmos mixing", "5.1 surround mixing", "Voice-over recording", "Podcast production", "Audio restoration", "Stem separation", "Dialogue editing", "ADR"],
     "url": "https://www.avatarpost.ie",
     "telephone": "+353867316148",
     "email": "info@avatarpost.ie",
@@ -58,7 +59,9 @@
     "areaServed": [
       {"@type": "Place", "name": "Dublin"},
       {"@type": "Place", "name": "County Wicklow"},
-      {"@type": "Place", "name": "Ireland"}
+      {"@type": "Place", "name": "Ireland"},
+      {"@type": "Place", "name": "United Kingdom"},
+      {"@type": "Place", "name": "Worldwide"}
     ],
     "founder": {
       "@type": "Person",
@@ -700,12 +703,50 @@
     }
     .bc-logo:hover { border-color: var(--c-accent); color: var(--c-accent); }
     .bc-logo-img {
-      height: 32px;
+      height: calc(var(--h, 34) * 1px);
       width: auto;
       object-fit: contain;
-      padding: 4px 8px;
+      padding: 0 8px;
     }
+    .broadcaster-logos { gap: 20px 26px !important; }
+
+    /* Dolby Atmos / 5.1 / Stereo panel */
+    .atmos-panel {
+      background: rgba(0,0,0,0.82);
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      border-radius: var(--radius-lg);
+      padding: clamp(32px, 5vw, 56px) clamp(20px, 4vw, 48px);
+      margin-bottom: 16px; position: relative;
+    }
+    .fmt-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+    .fmt-tile {
+      text-align: center; padding: 28px 18px;
+      background: rgba(255,255,255,0.05);
+      border: 0.5px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-md);
+    }
+    .fmt-name { font-size: clamp(26px, 3.2vw, 38px); font-weight: 700; letter-spacing: -0.03em; color: #fff; line-height: 1.1; }
+    .fmt-tile p { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.55; margin-top: 10px; }
+    .atmos-panel .tags-row { margin-top: 28px; }
     .rte-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c-accent); }
+
+    /* ─── VOICE-OVER ────────────────────────────────────────── */
+    #voice { background: var(--c-bg-alt); }
+    .world-card {
+      background: var(--c-white);
+      border: 0.5px solid var(--c-rule);
+      border-radius: var(--radius-lg);
+      padding: 36px 32px;
+    }
+    .world-card .pill { margin-bottom: 14px; font-size: 11px; }
+    .world-card h3 { font-size: 22px; font-weight: 600; letter-spacing: -0.018em; margin-bottom: 10px; }
+    .world-card > p { font-size: 15px; color: var(--c-text-2); line-height: 1.6; }
+    .city-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+    .city-chip {
+      font-size: 14px; font-weight: 500; color: var(--c-text);
+      padding: 8px 16px; border-radius: 980px;
+      background: var(--c-bg-alt); border: 0.5px solid var(--c-rule);
+    }
 
     /* ─── ⑥ WORK ────────────────────────────────────────────── */
     #work { background: var(--c-bg-dark); }
@@ -953,9 +994,12 @@
       .flow-item:nth-child(4)::after { display: none; }
       .awards-grid { grid-template-columns: 1fr; }
       .post-grid { grid-template-columns: 1fr; }
+      .nav-links li.nav-extra { display: none; }
     }
     @media (max-width: 600px) {
       .services-grid, .post-grid { grid-template-columns: 1fr; }
+      .fmt-grid { grid-template-columns: 1fr; }
+      .bc-logo-img { height: calc(var(--h, 34) * 0.8px); }
       .flow-grid { grid-template-columns: 1fr; }
       .flow-item::after { display: none !important; }
       nav { padding: 0 16px; }
@@ -975,10 +1019,12 @@
   <div class="nav-inner">
     <span class="nav-wordmark">Avatar Audio Post Production</span>
     <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
+      <li class="nav-extra"><a href="#services">Services</a></li>
+      <li><a href="#post">Atmos Mixing</a></li>
+      <li><a href="#voice">Voice-Over</a></li>
       <li><a href="#restoration">Restoration</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#about">About</a></li>
+      <li class="nav-extra"><a href="#work">Work</a></li>
+      <li class="nav-extra"><a href="#about">About</a></li>
       <li><a href="#contact" class="nav-pill">Get in Touch</a></li>
     </ul>
   </div>
@@ -991,9 +1037,9 @@
   <div class="hero-content col-center">
     <h1 style="margin:0; padding:0; line-height:1;"><img loading="lazy" src="Avatar_Logo.png" alt="Avatar Audio Post Production" style="max-width: min(90vw, 725px); height: auto; margin-bottom: 28px;"><span style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Avatar Audio Post Production – Audio Post Production &amp; Restoration Ireland</span></h1>
     <p class="t-subhead hero-sub">
-      Ireland's specialist audio post-production and audio restoration studio.<br>
-      Audio consultant to the Irish Film Institute Film Archive.<br>
-      Two-time IFTA award-winner.
+      Dolby Atmos &amp; 5.1 mixing, voice-over recording and audio restoration.<br>
+      Based in Ireland, working with productions worldwide.<br>
+      Audio consultant to the IFI Film Archive. Two-time IFTA award-winner.
     </p>
     <div class="btn-group center">
       <a href="#contact" class="btn btn-solid">Get in Touch</a>
@@ -1009,48 +1055,112 @@
 <section id="post">
   <div class="container">
     <div class="section-header">
-      <p class="t-eyebrow">Post-Production</p>
-      <h2 class="t-title">Broadcast-Standard Mixing &amp; Sound Design</h2>
-      <p class="t-subhead">Full audio post-production for film, television, documentary, and corporate content.</p>
+      <p class="t-eyebrow">Mixing &amp; Post-Production</p>
+      <h2 class="t-title">Dolby Atmos &amp; 5.1 Mixing</h2>
+      <p class="t-subhead">Immersive and surround final mixes for film, television and streaming, completed in a purpose-built Dolby Atmos studio and delivered to Netflix, Amazon Prime Video and broadcaster specifications.</p>
+    </div>
+    <div class="atmos-panel">
+      <div class="fmt-grid">
+        <div class="fmt-tile">
+          <div class="fmt-name">Dolby Atmos</div>
+          <p>Object-based immersive mixes with height channels, for streaming and cinema</p>
+        </div>
+        <div class="fmt-tile">
+          <div class="fmt-name">5.1 Surround</div>
+          <p>Full surround mixes for broadcast, streaming and theatrical release</p>
+        </div>
+        <div class="fmt-tile">
+          <div class="fmt-name">Stereo</div>
+          <p>Broadcast stereo mixes, checked to loudness specification</p>
+        </div>
+      </div>
+      <div class="tags-row">
+        <span class="tag">Netflix delivery</span>
+        <span class="tag">Amazon Prime Video delivery</span>
+        <span class="tag">Stems &amp; M&amp;E deliverables</span>
+        <span class="tag">Film festival &amp; cinema</span>
+      </div>
     </div>
     <div class="post-grid">
       <div class="post-card">
         <div class="post-card-ico"><svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3zm5 11a5 5 0 01-10 0H5a7 7 0 0014 0h-2zm-5 7v2H9v2h6v-2h-3v-2z"/></svg></div>
-        <div><h3>Dubbing &amp; Final Mix</h3><p>Broadcast, cinema and streaming platform delivery, mixed in a calibrated purpose-built studio.</p></div>
+        <div><h3>Series Packages</h3><p>Voice-over recording and final mix per episode at a fixed price, for factual and lifestyle series of six episodes or more.</p></div>
       </div>
       <div class="post-card">
         <div class="post-card-ico"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg></div>
-        <div><h3>Dialogue &amp; ADR</h3><p>Precision dialogue editing and automated dialogue replacement for any delivery format.</p></div>
+        <div><h3>Dialogue Editing &amp; ADR</h3><p>Precision dialogue editing, noise reduction and ADR for any delivery format.</p></div>
       </div>
       <div class="post-card">
         <div class="post-card-ico"><svg viewBox="0 0 24 24"><path d="M12 3v10.55A4 4 0 1014 17V7h4V3h-6z"/></svg></div>
-        <div><h3>Sound Design</h3><p>Creative sound design and effects editing for documentary, drama, and commercial productions.</p></div>
+        <div><h3>Sound Design, Effects &amp; Foley</h3><p>Sound design, effects editing and Foley for documentary, drama and commercial productions.</p></div>
       </div>
       <div class="post-card">
         <div class="post-card-ico"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14l4-4V5a2 2 0 00-2-2zm-7 3a4 4 0 110 8 4 4 0 010-8zm6 12H6v-.57c0-2 4-3.1 6-3.1s6 1.1 6 3.1V18z"/></svg></div>
-        <div><h3>Voiceover &amp; Podcast</h3><p>Professional voiceover recording and full podcast production and post-production.</p></div>
+        <div><h3>In-House, On-Site or Remote</h3><p>Mix in our studio, at your facility as a freelance dubbing mixer, or remotely, for productions anywhere in the world.</p></div>
       </div>
     </div>
     <!-- Broadcaster strip -->
     <div class="broadcaster-strip">
       <p class="broadcaster-label">Productions for</p>
       <div class="broadcaster-logos">
-        <img loading="lazy" src="logo-bbc.png" alt="BBC" title="BBC" class="bc-logo-img">
-        <img loading="lazy" src="logo-ch4.png" alt="Channel 4" title="Channel 4" class="bc-logo-img">
-        <img loading="lazy" src="logo-rte.png" alt="RTÉ" title="RTÉ" class="bc-logo-img">
-        <img loading="lazy" src="logo-tg4.png" alt="TG4" title="TG4" class="bc-logo-img">
-        <img loading="lazy" src="logo-arte.png" alt="ARTE" title="ARTE" class="bc-logo-img">
-        <img loading="lazy" src="logo-natgeo.png" alt="National Geographic" title="National Geographic" class="bc-logo-img">
-        <img loading="lazy" src="logo-smithsonian.png" alt="Smithsonian" title="Smithsonian Channel" class="bc-logo-img">
-        <img loading="lazy" src="logo-ifi.png" alt="IFI" title="Irish Film Institute" class="bc-logo-img">
-        <img loading="lazy" src="logo-sky.png" alt="Sky" title="Sky" class="bc-logo-img">
-        <img loading="lazy" src="logo-itv.png" alt="ITV" title="ITV" class="bc-logo-img">
-        <img loading="lazy" src="logo-nta.png" alt="NTA" title="Nigerian Television Authority" class="bc-logo-img">
-        <img loading="lazy" src="logo-rtl.png" alt="RTL" title="RTL Germany" class="bc-logo-img">
-        <img loading="lazy" src="logo-carlton.png" alt="Carlton Television" title="Carlton Television" class="bc-logo-img">
-        <img loading="lazy" src="logo-lwt.png" alt="LWT" title="London Weekend Television" class="bc-logo-img">
-        <img loading="lazy" src="logo-pbs.png" alt="PBS" title="PBS" class="bc-logo-img">
-        <img loading="lazy" src="logo-nhk.png" alt="NHK" title="NHK Japan" class="bc-logo-img">
+        <img loading="lazy" src="logo-bbc.png" alt="BBC" title="BBC" class="bc-logo-img" style="--h:32">
+        <img loading="lazy" src="logo-ch4.png" alt="Channel 4" title="Channel 4" class="bc-logo-img" style="--h:44">
+        <img loading="lazy" src="logo-channel5.png" alt="Channel 5" title="Channel 5" class="bc-logo-img" style="--h:50">
+        <img loading="lazy" src="logo-rte.png" alt="RTÉ" title="RTÉ" class="bc-logo-img" style="--h:38">
+        <img loading="lazy" src="logo-tg4.png" alt="TG4" title="TG4" class="bc-logo-img" style="--h:36">
+        <img loading="lazy" src="logo-arte.png" alt="ARTE" title="ARTE" class="bc-logo-img" style="--h:29">
+        <img loading="lazy" src="logo-natgeo.png" alt="National Geographic" title="National Geographic" class="bc-logo-img" style="--h:32">
+        <img loading="lazy" src="logo-smithsonian.png" alt="Smithsonian" title="Smithsonian Channel" class="bc-logo-img" style="--h:40">
+        <img loading="lazy" src="logo-discovery.png" alt="Discovery" title="Discovery" class="bc-logo-img" style="--h:50">
+        <img loading="lazy" src="logo-appletv.png" alt="Apple TV" title="Apple TV" class="bc-logo-img" style="--h:40">
+        <img loading="lazy" src="logo-ifi.png" alt="IFI" title="Irish Film Institute" class="bc-logo-img" style="--h:42">
+        <img loading="lazy" src="logo-sky.png" alt="Sky" title="Sky" class="bc-logo-img" style="--h:38">
+        <img loading="lazy" src="logo-itv.png" alt="ITV" title="ITV" class="bc-logo-img" style="--h:38">
+        <img loading="lazy" src="logo-nta.png" alt="NTA" title="Nigerian Television Authority" class="bc-logo-img" style="--h:32">
+        <img loading="lazy" src="logo-rtl.png" alt="RTL" title="RTL Germany" class="bc-logo-img" style="--h:25">
+        <img loading="lazy" src="logo-carlton.png" alt="Carlton Television" title="Carlton Television" class="bc-logo-img" style="--h:25">
+        <img loading="lazy" src="logo-lwt.png" alt="LWT" title="London Weekend Television" class="bc-logo-img" style="--h:31">
+        <img loading="lazy" src="logo-pbs.png" alt="PBS" title="PBS" class="bc-logo-img" style="--h:38">
+        <img loading="lazy" src="logo-nhk.png" alt="NHK" title="NHK Japan" class="bc-logo-img" style="--h:32">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     VOICE-OVER  -  one idea: voice talent, any language
+═════════════════════════════════════════════════ -->
+<section id="voice">
+  <div class="container">
+    <div class="split">
+      <div class="split-text">
+        <span class="pill">Voice-Over &amp; Podcast</span>
+        <h2 class="t-title">Voice-Over in Any Language</h2>
+        <p class="t-body">Killian has spent more than 35 years recording voice talent, including many leading actors, in many languages. Sessions are recorded on <strong>high-end microphones and signal chain</strong>, then edited, cleaned and mixed to your delivery specification.</p>
+        <ul class="check-list">
+          <li><span class="check-ico"></span>Documentary and series narration</li>
+          <li><span class="check-ico"></span>Multilingual and foreign-language sessions</li>
+          <li><span class="check-ico"></span>Dubbing and ADR</li>
+          <li><span class="check-ico"></span>Podcast recording, editing and production, in the studio or on location</li>
+          <li><span class="check-ico"></span>Remote-directed sessions via Source-Connect, Zoom or Teams</li>
+          <li><span class="check-ico"></span>Voice-over and final mix as a single per-episode package</li>
+        </ul>
+        <a href="#contact" class="btn btn-solid">Book a Session</a>
+      </div>
+      <div>
+        <div class="world-card">
+          <span class="pill">International</span>
+          <h3>Working with productions worldwide</h3>
+          <p>From a base in Ireland, Avatar records, mixes and restores for clients across Europe, North America, Africa and Asia.</p>
+          <div class="city-row">
+            <span class="city-chip">Dublin</span>
+            <span class="city-chip">London</span>
+            <span class="city-chip">New York</span>
+            <span class="city-chip">Munich</span>
+            <span class="city-chip">Abuja</span>
+            <span class="city-chip">Karachi</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1297,9 +1407,29 @@
     <div class="section-header">
       <p class="t-eyebrow">What We Do</p>
       <h2 class="t-title">Specialist Audio Services</h2>
-      <p class="t-subhead">From forensic film archive restoration to broadcast-ready final mixes, and everything in between.</p>
+      <p class="t-subhead">Dolby Atmos and 5.1 final mixes, voice-over recording, archive restoration and re-versioning for broadcasters, streamers and film archives.</p>
     </div>
     <div class="services-grid">
+
+      <div class="svc-card">
+        <div class="svc-icon">
+          <!-- Faders icon -->
+          <svg viewBox="0 0 28 28"><path d="M7 4v20M14 4v20M21 4v20" stroke="white" stroke-width="2" stroke-linecap="round" fill="none" opacity=".55"/><rect x="4" y="15" width="6" height="4" rx="1.5"/><rect x="11" y="7" width="6" height="4" rx="1.5"/><rect x="18" y="12" width="6" height="4" rx="1.5"/></svg>
+        </div>
+        <h3>Dolby Atmos &amp; 5.1 Mixing</h3>
+        <p>Immersive Dolby Atmos, 5.1 surround and stereo final mixes for film, television and streaming, delivered to Netflix, Amazon Prime Video and broadcaster specifications.</p>
+        <a href="#post" class="svc-more">Learn more</a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">
+          <!-- Location mic / portable recording icon -->
+          <svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="11" r="7" stroke="white" stroke-width="2"/><path d="M14 18v6" stroke="white" stroke-width="2.2" stroke-linecap="round"/><path d="M10 24h8" stroke="white" stroke-width="2.2" stroke-linecap="round"/><circle cx="14" cy="11" r="3" fill="white"/></svg>
+        </div>
+        <h3>Voice-Over &amp; Podcast Recording</h3>
+        <p>More than 35 years recording voice talent, including many leading actors, in many languages. In the studio, on location or remotely, on high-end condenser microphones and professional audio interfaces.</p>
+        <a href="#voice" class="svc-more">Learn more</a>
+      </div>
 
       <div class="svc-card">
         <div class="svc-icon">
@@ -1317,28 +1447,8 @@
           <svg viewBox="0 0 28 28"><path d="M4 8h20M4 14h20M4 20h20" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/><circle cx="8" cy="8" r="2" fill="white"/><circle cx="14" cy="14" r="2" fill="white"/><circle cx="20" cy="20" r="2" fill="white"/></svg>
         </div>
         <h3>Stem Separation &amp; Re-Versioning</h3>
-        <p>Remove dialogue, narration or music from a completed mix. M&amp;E (Music &amp; Effects) track creation and re-versioning audio services for films and TV shows when original stems no longer exist.</p>
+        <p>Remove dialogue, narration or music from a completed mix. M&amp;E (Music &amp; Effects) track creation and re-versioning audio services for films and TV shows.</p>
         <a href="#stem" class="svc-more">Learn more</a>
-      </div>
-
-      <div class="svc-card">
-        <div class="svc-icon">
-          <!-- Mic icon -->
-          <svg viewBox="0 0 28 28"><path d="M14 3a4 4 0 00-4 4v8a4 4 0 008 0V7a4 4 0 00-4-4z"/><path d="M7 14a7 7 0 0014 0" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/><line x1="14" y1="21" x2="14" y2="25" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg>
-        </div>
-        <h3>Audio Post-Production</h3>
-        <p>Broadcast-standard dubbing mixer services, final mixes, sound design, ADR prep, voiceover recording and podcast production.</p>
-        <a href="#post" class="svc-more">Learn more</a>
-      </div>
-
-      <div class="svc-card">
-        <div class="svc-icon">
-          <!-- Location mic / portable recording icon -->
-          <svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="11" r="7" stroke="white" stroke-width="2"/><path d="M14 18v6" stroke="white" stroke-width="2.2" stroke-linecap="round"/><path d="M10 24h8" stroke="white" stroke-width="2.2" stroke-linecap="round"/><circle cx="14" cy="11" r="3" fill="white"/></svg>
-        </div>
-        <h3>Podcast &amp; Location Voiceover</h3>
-        <p>Broadcast-quality voiceover and podcast recording on location or remotely. Using high-end condenser microphones and professional audio interfaces, we deliver studio-grade results wherever you need them.</p>
-        <a href="#contact" class="svc-more">Get in touch</a>
       </div>
 
     </div>
@@ -1424,7 +1534,7 @@
     <div class="section-header">
       <p class="t-eyebrow">Stem Separation &amp; Re-Versioning</p>
       <h2 class="t-title">One Mix. Any Language.</h2>
-      <p class="t-subhead">Using advanced AI-powered source separation, we extract dialogue, music and effects from a fully mixed track, even when the original stems no longer exist.</p>
+      <p class="t-subhead">Using advanced AI-powered source separation, we extract dialogue, music and effects from a fully mixed track.</p>
     </div>
 
     <div class="flow-grid">
@@ -1563,16 +1673,16 @@
       <div class="about-text">
         <p class="t-eyebrow">About</p>
         <h2 class="t-title">Killian FitzGerald</h2>
-        <p class="t-body">Killian is one of Ireland's most experienced audio post-production specialists, with a career spanning <strong>35 years across Dublin, London, and New York</strong>.</p>
+        <p class="t-body">Killian is one of Ireland's most experienced audio post-production specialists, with a career spanning <strong>35 years</strong> and work for productions in <strong>Dublin, London, New York, Munich, Abuja and Karachi</strong>.</p>
         <p class="t-body">He began at Tommy Ellis Sound Studios in 1989, then held senior positions at Carlton Television (Head of Audio Post Production), Space Facilities, Molinaire, and Oasis TV in London, working for BBC, Channel 4, and ITV.</p>
-        <p class="t-body">In 2007 he founded Avatar Audio Post Production. He lectures at Pulse College and Griffith College.</p>
+        <p class="t-body">In 2007 he founded Avatar Audio Post Production, which now mixes in Dolby Atmos, 5.1 and stereo for broadcasters and streaming platforms. He lectures in audio post-production at Pulse College and in immersive audio at IADT.</p>
         <a href="#contact" class="btn btn-solid" style="margin-top:12px;">Work With Killian</a>
       </div>
       <div>
         <div class="ifi-card">
           <span class="pill" style="margin-bottom:12px;">IFI Film Archive</span>
           <h3>Audio Consultant</h3>
-          <p>Entrusted by the Irish Film Institute with the preservation and restoration of Ireland's most historically significant film soundtracks  -  from 1920s silents to mid-century optical tracks.</p>
+          <p>Entrusted by the Irish Film Institute with the preservation and restoration of Ireland's most historically significant film soundtracks, from early optical sound through to magnetic and tape-era recordings.</p>
         </div>
         <ul class="timeline">
           <li class="tl-item">
@@ -1623,7 +1733,7 @@
 <section id="contact">
   <div class="container">
     <h2 class="t-title">Let's Talk</h2>
-    <p class="t-subhead">Whether you need audio restoration, post-production, or stem separation for international versioning, we'd love to hear from you.</p>
+    <p class="t-subhead">Dolby Atmos or 5.1 mixing, a voice-over session, audio restoration or re-versioning for international distribution: get in touch. Based in Ireland, working with productions worldwide.</p>
     <div class="contact-grid">
       <div class="contact-chip">
         <p class="contact-chip-label">Email</p>
@@ -1635,7 +1745,7 @@
       </div>
       <div class="contact-chip">
         <p class="contact-chip-label">Location</p>
-        <p class="contact-chip-val">Ireland</p>
+        <p class="contact-chip-val">Ireland · Worldwide</p>
       </div>
       <div class="contact-chip">
         <p class="contact-chip-label">IMDB</p>
@@ -1721,7 +1831,7 @@
   `;
   document.head.appendChild(style);
 
-  document.querySelectorAll('.svc-card, .post-card, .award-card, .work-thumb-card, .flow-item').forEach((el, i) => {
+  document.querySelectorAll('.svc-card, .post-card, .fmt-tile, .award-card, .work-thumb-card, .flow-item').forEach((el, i) => {
     el.classList.add('fade-up');
     el.style.transitionDelay = (i % 4) * 0.08 + 's';
   });
